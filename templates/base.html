@@ -1,0 +1,64 @@
+{% extends 'inicio.html'%}
+
+
+
+
+{% block title %}
+    {{super()}}
+    Wilson estrada
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<nav class="navbar navbar-dark bg-dark">
+    
+   
+        <div class="container-fluid">
+          <a class="navbar-brand" href="inicio">Inicio</a>
+          <a class="navbar-brand" href="python">Python</a>
+          <a class="navbar-brand" href="java">Java</a>
+          <a class="navbar-brand" href="C#">C#</a>
+          <a class="navbar-brand"  href="NodeJs">NodeJs</a>
+          <a class="navbar-brand"  href="bd">Bases de datos</a>
+          <a class="navbar-brand"  href="wilson">Mas sobre mi</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+        {% endblock %}
+  {% block body %}
+  <div class="container">
+<h1>Hola bienvenidos a mi Portafolio</h1>
+
+<p>Yo soy wilson javier estrada zapata
+    Tecnologo en sistemas, mis conocimientos adquiridos en este proceso estan enfocados al desarrollo de software,algoritmia,frameworks,QA y bases de datos
+</p>
+<p></p>
+ 
+<ul>
+Tecnologias estudiadas
+{%for c in items%}
+<li>{{ c }}</li>
+{% endfor%}
+</ul>
+
+
+
+<ul>
+  Bases de datos
+  {%for b in mas%}
+  <li>{{ b }}</li>
+  {% endfor %}
+  
+</ul>
+{% endblock %}
+</div>
+
+{% block music%}
+
+{% endblock %}
+

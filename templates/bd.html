@@ -1,0 +1,55 @@
+{% extends 'inicio.html'%}
+
+
+
+
+{% block title %}
+    {{super()}}
+    Bases de datos
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<nav class="navbar navbar-dark bg-dark">
+    
+   
+        <div class="container-fluid">
+          <a class="navbar-brand" href="inicio">Inicio</a>
+          <a class="navbar-brand" href="python">Python</a>
+          <a class="navbar-brand" href="java">Java</a>
+          <a class="navbar-brand" href="C#">C#</a>
+          <a class="navbar-brand"  href="NodeJs">NodeJs</a>
+          <a class="navbar-brand"  href="bd">Bases de datos</a>
+          <a class="navbar-brand"  href="wilson">Mas sobre mi</a>
+          
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+        {% endblock %}
+
+        {% block body %}
+        <div class="container">
+      <h2>Mis conocimientos en Bases de Datos</h2>
+      
+      <p>
+        Mis conocimientos se enfocaron en aprender sintaxis,Algoritmos,Ciclos,triggers con la finalidad de crear bases de datos
+        estructuradas y relacionales donde se filtra informacion bajo ciertas peticiones todo esto bajo los motores de 
+        SqlServer y MySql.  
+      </p>
+     
+    </div>
+
+    <img src="{{url_for('static', filename='images/sqlserver.jpg')}}" height="400" width="600" >
+    <img src="{{url_for('static', filename='images/mysql.jpg')}}" height="400" width="600" >
+      {% endblock %}
+
+      {% block images%}
+      
+      {% endblock %}
+
+        

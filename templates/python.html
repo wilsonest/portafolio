@@ -1,0 +1,51 @@
+{% extends 'inicio.html'%}
+
+
+
+
+{% block title %}
+    {{super()}}
+    Python
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<nav class="navbar navbar-dark bg-dark">
+    
+   
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio">Inicio</a>
+            <a class="navbar-brand" href="python">Python</a>
+            <a class="navbar-brand" href="java">Java</a>
+            <a class="navbar-brand" href="C#">C#</a>
+            <a class="navbar-brand"  href="NodeJs">NodeJs</a>
+            <a class="navbar-brand"  href="bd">Bases de datos</a>
+            <a class="navbar-brand"  href="wilson">Mas sobre mi</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+        {% endblock %}
+
+        {% block body %}
+        <div class="container">
+      <h1>Mis conocimientos en Python</h1>
+      
+      <p>
+        Mis conocimientos se enfocaron en aprender sintaxis,Algoritmos,Ciclos tambien un framework para integrar a las web como lo es Flask
+        y creacion de API REST, procesos de Automatizacion como bots y librerias para el webscraping como selenium 
+      </p>
+     
+    </div>
+
+    <img src="{{url_for('static', filename='images/back_python.jpg')}}" height="400" width="600" >
+    <img src="{{url_for('static', filename='images/front_python.jpg')}}" height="400" width="600" >
+      {% endblock %}
+
+      {% block images%}
+      
+      {% endblock %}

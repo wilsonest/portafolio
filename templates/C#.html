@@ -1,0 +1,52 @@
+{% extends 'inicio.html'%}
+
+
+
+
+{% block title %}
+    {{super()}}
+    C#
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<nav class="navbar navbar-dark bg-dark">
+    
+   
+        <div class="container-fluid">
+          <a class="navbar-brand" href="inicio">Inicio</a>
+          <a class="navbar-brand" href="python">Python</a>
+          <a class="navbar-brand" href="java">Java</a>
+          <a class="navbar-brand" href="C#">C#</a>
+          <a class="navbar-brand"  href="NodeJs">NodeJs</a>
+          <a class="navbar-brand"  href="bd">Bases de datos</a>
+          <a class="navbar-brand"  href="wilson">Mas sobre mi</a>
+          
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+        {% endblock %}
+
+        {% block body %}
+        <div class="container">
+      <h1>Mis conocimientos en C#</h1>
+      
+      <p>
+        Mis conocimientos se enfocaron en aprender sintaxis,Algoritmos,Ciclos tambien la parte grafica llamada Windows form y algo importante como
+        lo es la conexion a bases de datos relacionales esto apoyado de la Programacion orientada a objetos(POO)
+      </p>
+     
+    </div>
+
+    <img src="{{url_for('static', filename='images/back_c.jpg')}}" height="400" width="600" >
+    <img src="{{url_for('static', filename='images/front_c.jpg')}}" height="400" width="600" >
+      {% endblock %}
+
+      {% block images%}
+      
+      {% endblock %}
